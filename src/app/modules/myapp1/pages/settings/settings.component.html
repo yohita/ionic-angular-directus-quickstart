@@ -1,0 +1,36 @@
+<ion-header  >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+    Settings  
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-segment  [(ngModel)]="segment">
+     
+    
+
+     
+      <ion-segment-button value="password" (click)="segmentChanged($event)">
+        <ion-label>Team</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="notifications" (click)="segmentChanged($event)">
+        <ion-label>Branches</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="profile" (click)="segmentChanged($event)">
+        <ion-label>Profile</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content>
+    
+  
+  </ion-content>
+
+
+

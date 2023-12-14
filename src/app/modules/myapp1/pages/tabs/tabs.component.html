@@ -1,0 +1,11 @@
+
+<ion-tabs>
+<ion-tab-bar>
+    <ng-container *ngFor="let item of tabs" >
+  <ion-tab-button [tab]="item.link" >
+    <ion-icon [name]="item.icon ? item.icon :'cart-outline'"></ion-icon>
+    <ion-label>{{item?.name}}</ion-label>
+  </ion-tab-button> 
+</ng-container>
+</ion-tab-bar>
+</ion-tabs>

@@ -1,0 +1,39 @@
+
+
+<ion-content>
+  <ion-grid style="max-width: 400px;margin:0px auto;padding:20px;text-align: center;padding-top:15%">
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+       <h1>MyApp</h1>
+      
+      </ion-col>
+      <ion-col size="12">
+        <ion-title  color="primary">Login</ion-title>
+      </ion-col>
+
+      <ion-col size=12>
+     <!-- reactive form using ngModel-->
+     <form name="form" (ngSubmit)="formSubmit($event)" ngNativeValidate>
+        <ion-item>
+        
+          <ion-input required label="Email" labelPlacement="floating" type="text" [(ngModel)]="model.email" name="username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+        
+          <ion-input required label="Password" labelPlacement="floating" type="password" [(ngModel)]="model.password" name="password"></ion-input>
+        </ion-item>
+        <br>
+        <ion-button type="submit" size="" expand="block" mode="ios">Login</ion-button> 
+
+        
+ 
+     </form>
+
+        <!-- show cpyright current year--><br>
+        <ion-note style="font-size: small;margin-bottom:5px">Build : -</ion-note><br>
+        <ion-note>&copy; {{currentYear}} <a href="/" style="text-decoration: none;">MyApp</a></ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

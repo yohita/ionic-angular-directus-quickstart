@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="font-weight: bold;">
+    {{ 'Home'}}
+    </ion-title>
+  </ion-toolbar>
+  </ion-header>
+<ion-content>
+
+ <!-- show dashboard along side add order and other buttons-->
+ <ion-grid>
+ <ion-row>
+  <ion-col size="9">
+   <h3> Dashboard </h3>
+  </ion-col>
+  <!-- <ion-col size="3" class="ion-text-end">
+    <ion-button color="primary" fill="outline" size="small" >View All</ion-button>
+  </ion-col> -->
+</ion-row>
+
+
+ <ion-row>
+
+  <ion-col size-xl="3" size-lg="4" size-md="6" size="12" *ngFor="let item of stats;let i=index">
+    <ion-card class="ion-text-center fle">
+        
+      <ion-row class="flexcentercenter metrix-row " style="border-bottom: 1px solid rgb(207, 207, 207);">
+        <ion-col size="8" color="primary" class="ion-text-start" >
+          <h3  >   <span class="label">  <ion-icon [name]="item?.icon ? item.icon :'cart-outline'"></ion-icon> {{item.name}} </span> </h3> 
+        </ion-col>
+        <ion-col size="4">
+          <h3> <span class="number">  ₹ 12324</span></h3>
+        </ion-col>
+        </ion-row>
+      <ion-row style="padding-top:10px;padding-bottom:10px" class="metrix-subrow flexcentercenter"> 
+            <ion-col size="4">
+              <span class="number"> ₹ 123</span>
+              <br>
+              <span class="label"> Today</span>
+            </ion-col>
+            <ion-col size="4">
+              <span class="number"> ₹ 123</span>
+              <br>
+              <span class="label"> Yday</span>
+            </ion-col>
+            <ion-col size="4">
+              <span class="number"> ₹ 123</span>
+              <br>
+              <span class="label"> Month</span>
+            </ion-col>
+           
+          
+      </ion-row>
+
+    </ion-card>
+  </ion-col>
+
+
+ </ion-row>
+
+</ion-grid>
+                
+
+
+</ion-content>

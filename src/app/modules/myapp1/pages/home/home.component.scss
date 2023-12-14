@@ -1,0 +1,20 @@
+.metrix-row{
+    .label{
+       
+    }
+    .number{
+        color:var(--ion-color-primary);
+         font-size: 1.1rem; 
+    }
+}
+
+.metrix-subrow{
+    .label{
+        color:var(--ion-color-primary);
+        font-size: 0.8em;
+    }
+    .number{
+       
+        font-size: 0.9rem;
+    }
+}
